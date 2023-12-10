@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dhurjati&display=swap" rel="stylesheet">
+    <title>Task Manager</title> 
+    <link rel="icon" href="icon1.png">
+</head>
+<body>
+    
+    <div id="task-manager">
+        <h1>Task Manager</h1>
+        <div id="task-form">
+            <input type="text" id="task-input" placeholder="Enter your task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div id="task-list">
+            <!-- Task list -->
+        </div>
+        <div id="task-filters">
+            <button onclick="showAll()">All Tasks</button>
+            <button onclick="showActive()">Active Tasks</button>
+            <button onclick="showCompleted()">Completed Tasks</button>
+        </div>
+    </div>
+    <button id="logout__Btn">Log out</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="logout.js" defer></script>
+    <script src="main.js"></script>
+</body>
+</html>

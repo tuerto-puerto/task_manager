@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <article class="container">
+        <div class="block">
+            <section class="block__item block-item">
+                <h2 class="block-item__title">Already have an account?</h2>
+                <button class="block-item__btn signin-btn">Sign in</button>
+            </section>
+            <section class="block__item block-item">
+                <h2 class="block-item__title">Don't you have an account?</h2>
+                <button class="block-item__btn signup-btn">Sign up</button>
+            </section>
+
+        </div>
+        <div class="form-box">
+            <!--login-->
+            <form action="2page/2_page.html" class="form form_signin" method="post">
+                <h3 class="form__title">Sign in</h3>
+                <p><input type="text" class="form__input" placeholder="Login"></p>
+                <p><input type="password" class="form__input" placeholder="Password"></p>
+                <p><button id="loginBtn" class="form__btn">Login</button></p>
+            </form>
+            <!--registration-->
+            <form action="#" class="form form_signup">
+                <h3 class="form__title">Registration</h3>
+                <p><input type="text" id="signupUsername" class="form__input" placeholder="Login"></p>
+                <p><input type="password" id="signupPassword" class="form__input" placeholder="Password"></p>
+                <p><button id="signupBtn" class="form__btn form__btn_signup">Register</button></p>
+            </form>
+
+        </div>
+    </article>
+
+    
+</body>
+</html>
